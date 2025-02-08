@@ -1,6 +1,11 @@
+<img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140712021.jpg" alt="단위 테스트의 기술" align="right" width="200" />
+
 # 단위 테스트의 기술 📚
 
-![표지](https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791140712021.jpg)
+로이 오셔로브, 블라디미르 코리코프 저
+
+견고하고 신뢰할 수 있는 코드를 만드는 단위 테스트 작성법
+
 
 ## 일정 📅
 
