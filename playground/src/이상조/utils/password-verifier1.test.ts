@@ -241,3 +241,10 @@ test("verify에 룰이 입력되지 않으면 에러를 반환한다.", () => {
     }
   }
 });
+
+test("verify에 룰이 입력되지 않으면 에러를 반환한다.", () => {
+  const verifier = makeVerifier();
+  expect(() => verifier.verify("아무 값이나 넣음")).toThrowError(
+    /룰이 없습니다./
+  );
+});
