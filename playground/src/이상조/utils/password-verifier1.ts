@@ -1,4 +1,4 @@
-type Rule = (input: string) => {
+export type Rule = (input: string) => {
   passed: boolean;
   reason: string;
 };
