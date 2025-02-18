@@ -12,4 +12,11 @@ describe("oneUpperCaseRule", () => {
   test("또다른 대문자가 있는 경우 성공한다.", () => {
     expect(oneUpperCaseRule("PASSWORD")).toBe(true);
   });
+
+  test.each(["Password", "PASSWORD"])(
+    "대문자가 있는 경우 성공한다.",
+    (password) => {
+      expect(oneUpperCaseRule(password)).toBe(true);
+    }
+  );
 });
