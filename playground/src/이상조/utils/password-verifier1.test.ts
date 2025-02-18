@@ -17,15 +17,14 @@ describe("PasswordVerifier1", () => {
         return { passed: false, reason: "그냥 실패함" };
       };
       verifier.addRule(실패하는_룰);
+      errors = verifier.verify("아무 값이나 넣음");
     });
 
     it("rule.reason에 기반한 에러를 반환한다.", () => {
-      errors = verifier.verify("아무 값이나 넣음");
       expect(errors[0]).toContain("그냥 실패함");
     });
 
     it("에러는 하나만 존재한다.", () => {
-      errors = verifier.verify("아무 값이나 넣음");
       expect(errors.length).toBe(1);
     });
   });
