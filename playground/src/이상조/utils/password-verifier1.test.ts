@@ -230,3 +230,14 @@ test("verifier에 성공하는 룰과 실패하는 룰을 입력할 경우 에�
   const errors = verifier.verify("아무 값이나 넣음");
   expect(errors[0]).toContain("그냥 실패함");
 });
+
+test("verify에 룰이 입력되지 않으면 에러를 반환한다.", () => {
+  const verifier = makeVerifier();
+  try {
+    verifier.verify("아무 값이나 넣음");
+  } catch (error) {
+    if (error instanceof Error) {
+      expect(error.message).toContain("룰이 없습니다.");
+    }
+  }
+});

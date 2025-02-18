@@ -15,6 +15,10 @@ class PasswordVerifier1 {
   }
 
   verify(input: string) {
+    if (this.rules.length === 0) {
+      throw new Error("룰이 없습니다.");
+    }
+
     const errors: string[] = [];
 
     this.rules.forEach((rule) => {
