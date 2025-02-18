@@ -33,3 +33,18 @@ describe("oneUpperCaseRule", () => {
     expect(result.passed).toEqual(expected);
   });
 });
+
+describe("oneUpperCaseRule with vanilla js for", () => {
+  const tests = {
+    Password: true,
+    PASSWORD: true,
+    password: false,
+  };
+
+  for (const [password, expected] of Object.entries(tests)) {
+    test(`${password} 가 입력되면 ${expected} 반환한다.`, () => {
+      const result = oneUpperCaseRule(password);
+      expect(result.passed).toEqual(expected);
+    });
+  }
+});
