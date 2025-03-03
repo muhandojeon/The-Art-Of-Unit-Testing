@@ -37,7 +37,7 @@
     "이상조:watch": "vitest --watch src/이상조/*",
     "함인규": "vitest run src/함인규/*",
     "함인규:coverage": "vitest run src/함인규/* --coverage",
-    "함인규:watch": "vitest --watch src/함인규/*"
+    "함인규:watch": "vitest --watch src/함인규/stub-time/*"
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -57,10 +57,12 @@
     "eslint-plugin-react-refresh": "^0.4.18",
     "globals": "^15.14.0",
     "jsdom": "^26.0.0",
+    "moment": "^2.30.1",
     "prettier": "^3.5.0",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.22.0",
     "vite": "^6.1.0",
     "vitest": "^3.0.5"
-  }
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
 }
